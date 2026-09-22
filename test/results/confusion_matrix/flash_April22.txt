@@ -1,0 +1,43 @@
+Confusion Matrix  (rows = Predicted, cols = Actual)
+
+                     Pedal_1     Pedal_2     Pedal_3     Pedal_4     Pedal_5        miss
+  ──────────────────────────────────────────────────────────────────────────────────────
+  Pedal_1                [2]          1           4           0           3           9 
+  Pedal_2                 0          [1]          0           0           0           0 
+  Pedal_3                 0           0          [0]          0           0           0 
+  Pedal_4                 0           0           0          [0]          0           0 
+  Pedal_5                 0           1           0           0          [1]          0 
+  miss                    0           0           0           0           0          [0]
+  ──────────────────────────────────────────────────────────────────────────────────────
+
+  Per-class metrics:
+  Class           Precision     Recall         F1    Support
+  ──────────────────────────────────────────────────────
+  Pedal_1              0.11       1.00       0.19          2
+  Pedal_2              1.00       0.33       0.50          3
+  Pedal_3              0.00       0.00       0.00          4
+  Pedal_4              0.00       0.00       0.00          0
+  Pedal_5              0.50       0.25       0.33          4
+  miss                 0.00       0.00       0.00          9
+
+  Overall accuracy: 4/22 = 18.2%
+
+  Misclassified clips (18):
+    GX019504_throw03.MP4  true=Pedal_2  pred=Pedal_5
+    GX019506_throw06.MP4  true=Pedal_2  pred=Pedal_1
+    GX019502_throw05.MP4  true=Pedal_3  pred=Pedal_1
+    GX019505_throw34.MP4  true=Pedal_3  pred=Pedal_1
+    GX019506_throw05pedal3.MP4  true=Pedal_3  pred=Pedal_1
+    GX019507_throw47.MP4  true=Pedal_3  pred=Pedal_1
+    GX019506_throw05pedal5.MP4  true=Pedal_5  pred=Pedal_1
+    GX019507_throw26.MP4  true=Pedal_5  pred=Pedal_1
+    GX019507_throw27.MP4  true=Pedal_5  pred=Pedal_1
+    GX019500_throw01.MP4  true=miss  pred=Pedal_1
+    GX019501_throw01.MP4  true=miss  pred=Pedal_1
+    GX019502_throw04.MP4  true=miss  pred=Pedal_1
+    GX019502_throw06.MP4  true=miss  pred=Pedal_1
+    GX019502_throw10.MP4  true=miss  pred=Pedal_1
+    GX019502_throw11.MP4  true=miss  pred=Pedal_1
+    GX019502_throw12.MP4  true=miss  pred=Pedal_1
+    GX019502_throw16.MP4  true=miss  pred=Pedal_1
+    GX019502_throw19.MP4  true=miss  pred=Pedal_1

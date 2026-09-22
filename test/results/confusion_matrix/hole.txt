@@ -1,0 +1,27 @@
+Confusion Matrix  (rows=Predicted, cols=Actual)
+
+                  Hole_1    Hole_2    Hole_3    Hole_4
+  ────────────────────────────────────────────────────
+  Hole_1             [4]        0         2         0 
+  Hole_2              0        [2]        0         1 
+  Hole_3              2         0       [10]        0 
+  Hole_4              1         0         0        [7]
+  ────────────────────────────────────────────────────
+
+  Per-class metrics:
+  Class         Precision     Recall         F1    Support
+  ────────────────────────────────────────────────────
+  Hole_1             0.67       0.57       0.62          7
+  Hole_2             0.67       1.00       0.80          2
+  Hole_3             0.83       0.83       0.83         12
+  Hole_4             0.88       0.88       0.88          8
+
+  Overall accuracy: 23/29 = 79.3%
+
+  Misclassified (6):
+    GX019505_throw16.MP4: true=Hole_1  pred=Hole_3
+    GX019505_throw65.MP4: true=Hole_1  pred=Hole_4
+    GX019507_throw30.MP4: true=Hole_1  pred=Hole_3
+    GX019505_throw42.MP4: true=Hole_3  pred=Hole_1
+    GX019505_throw43.MP4: true=Hole_3  pred=Hole_1
+    GX019505_throw64.MP4: true=Hole_4  pred=Hole_2

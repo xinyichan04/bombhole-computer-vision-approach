@@ -1,0 +1,32 @@
+# macOS / Python noise
+.DS_Store
+__pycache__/
+*.pyc
+.context/
+
+# ─────────────────────────────────────────────────────────────
+# Media lives in Google Drive, not in git — see README.md.
+# GitHub hard-rejects files >100MB and this dataset is ~6.8GB.
+# These paths are expected to exist locally but are never committed.
+# ─────────────────────────────────────────────────────────────
+source/raw/
+source/clips/
+test/data/
+test/debug/
+
+# test/results/ is media except for the small text results, which are
+# worth reading in the repo. Exclude the contents, not the directory,
+# so the two re-includes below can take effect.
+test/results/*
+!test/results/confusion_matrix/
+!test/results/hole_results.csv
+
+# Belt and braces: no media file type is ever committed
+*.MP4
+*.mp4
+*.MOV
+*.mov
+*.jpg
+*.jpeg
+*.png
+!docs/*.png

@@ -1,0 +1,31 @@
+Confusion Matrix  (rows = Predicted, cols = Actual)
+
+                     Pedal_1     Pedal_2     Pedal_3     Pedal_4     Pedal_5        miss
+  ──────────────────────────────────────────────────────────────────────────────────────
+  Pedal_1                [1]          0           0           0           0           0 
+  Pedal_2                 0          [1]          0           0           0           0 
+  Pedal_3                 0           0          [2]          0           0           0 
+  Pedal_4                 0           0           0          [0]          0           0 
+  Pedal_5                 0           0           1           0          [3]          0 
+  miss                    1           2           1           0           1          [9]
+  ──────────────────────────────────────────────────────────────────────────────────────
+
+  Per-class metrics:
+  Class           Precision     Recall         F1    Support
+  ──────────────────────────────────────────────────────
+  Pedal_1              1.00       0.50       0.67          2
+  Pedal_2              1.00       0.33       0.50          3
+  Pedal_3              1.00       0.50       0.67          4
+  Pedal_4              0.00       0.00       0.00          0
+  Pedal_5              0.75       0.75       0.75          4
+  miss                 0.64       1.00       0.78          9
+
+  Overall accuracy: 16/22 = 72.7%
+
+  Misclassified clips (6):
+    GX019504_throw06.MP4  true=Pedal_1  pred=miss
+    GX019504_throw03.MP4  true=Pedal_2  pred=miss
+    GX019505_throw10.MP4  true=Pedal_2  pred=miss
+    GX019506_throw05pedal3.MP4  true=Pedal_3  pred=miss
+    GX019507_throw47.MP4  true=Pedal_3  pred=Pedal_5
+    GX019505_throw12.MP4  true=Pedal_5  pred=miss

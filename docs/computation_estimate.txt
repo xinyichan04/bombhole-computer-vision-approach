@@ -1,0 +1,13 @@
+Input: 4K (2160×3840) @ 30fps, processed at 540×960 (16× downscale)
+Consuming Computation
+downsize 4K to 540×960  (for OpenCV MOG2 background subtraction and contour finding )
+OpenCV MOG2
+Morphological open+close (smoothing)
+ROI -> negligible computation
+
+total: 60.7M ops/frame, 1.82 GFLOPS ( 1.82 billion ops/second)
+
+Hardware option
+Raspberry Pi 4: ~3 GFLOPS, ~49 fps
+Raspberry Pi 5~6.5 GFLOPS, ~107 fps
+Jetson Orin Nano 40 TOPS
