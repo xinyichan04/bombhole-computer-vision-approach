@@ -5,21 +5,13 @@ from GoPro footage. All scripts are standalone CLIs — run them from the reposi
 
 ## Where the data lives
 
-This repository holds **code, configuration and text results only** (~2 MB). The footage
-and generated image dumps are ~6.8 GB and live in Google Drive — GitHub hard-rejects any
-file over 100 MB, and four of the raw recordings are well past it.
-
-> **TODO — paste the Drive share links below after uploading.**
-> Upload each local folder to Drive keeping the same name, then replace `PASTE_LINK_HERE`
-> with that folder's share link. Nothing else in the repo needs to change.
-
 | Drive folder | Local path | Size | Files | Contents |
 |---|---|---:|---:|---|
-| `source/raw` | `source/raw/` | 1.5 GB | 7 | Uncut GoPro recordings, `GX019499`–`GX019506` — [PASTE_LINK_HERE] |
-| `source/clips` | `source/clips/` | 2.4 GB | 175 | Per-throw clips cut from the raw recordings — [PASTE_LINK_HERE] |
-| `test/data` | `test/data/` | 61 MB | 5 | Clips used for ad-hoc testing — [PASTE_LINK_HERE] |
-| `test/results` | `test/results/` | 2.3 GB | 802 | Classified clips, annotated videos, extracted frames — [PASTE_LINK_HERE] |
-| `test/debug` | `test/debug/` | 526 MB | 672 | Frame-level debug dumps — [PASTE_LINK_HERE] |
+| `source/raw` | `source/raw/` | 1.5 GB | 7 | Uncut GoPro recordings, `GX019499`–`GX019506` — [[click me](https://drive.google.com/drive/folders/1yhA9hurvCbpeMlqRg2qLiuNw9V36ZAtW?usp=drive_link)] |
+| `source/clips` | `source/clips/` | 2.4 GB | 175 | Per-throw clips cut from the raw recordings — [[click me](https://drive.google.com/drive/folders/1UdVGtl5nDi8U-7G3oinbU9TPhVUouv3t?usp=drive_link)] |
+| `test/data` | `test/data/` | 61 MB | 5 | Clips used for ad-hoc testing — [[click me](https://drive.google.com/drive/folders/1zHcfz4qdboYuLSFhSWhpr5asR_Gafq0i?usp=drive_link)] |
+| `test/results` | `test/results/` | 2.3 GB | 802 | Classified clips, annotated videos, extracted frames — [[click me](https://drive.google.com/drive/folders/1rfuW5oyEOKi9bHKBOQ7edp9CNw-HXY_M?usp=drive_link)] |
+| `test/debug` | `test/debug/` | 526 MB | 672 | Frame-level debug dumps — [[click me](https://drive.google.com/drive/folders/17Ek7LaTwJRhuEOOawzS_u4W9bWqyip3t?usp=drive_link)] |
 
 To work with the pipeline, download those folders back to the same paths inside your
 clone. They are listed in `.gitignore`, so they will never be committed by accident.
